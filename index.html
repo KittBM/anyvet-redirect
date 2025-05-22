@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>กำลังพาไปยังแอป...</title>
+  <script>
+    // ตรวจสอบระบบปฏิบัติการ
+    if (/android/i.test(navigator.userAgent)) {
+      window.location.href = "https://play.google.com/store/apps/details?id=io.anyvet.mobile";
+    } else if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+      window.location.href = "https://apps.apple.com/th/app/anyvet/id6738333722";
+    } else {
+      // ถ้าเปิดจาก desktop หรือไม่รู้ระบบ
+      window.location.href = "https://sites.google.com/partner24hub.com/anyvet";
+    }
+  </script>
+</head>
+<body>
+  <p>กำลังพาไปยังแอปของคุณ...</p>
+</body>
+</html>
